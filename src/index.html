@@ -15,19 +15,21 @@
       href="https://github.com/AngelikaWebDev/icons/blob/main/list-style/icon-list.png?raw=true"
     />
   </head>
-  <body class="bg-secondary">
-    <header class="p-5">
-      <h1 class="text-center text-light">
+  <body>
+    <header class="pt-5">
+      <h1 class="text-center text-light mb-5">
         ToDo List
       </h1>
+      <div class="container-input p-8">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Inserta nueva tarea y presiona Enter"
+          class="form-control mb-3"
+        />
+      </div>
     </header>
     <main class="main">
-      <input
-        type="text"
-        id="taskInput"
-        placeholder="Inserta nueva tarea y presiona Enter"
-        class="form-control mb-3"
-      />
       <div class="container-list">
         <ul id="taskList" class="todo-list p-0"></ul>
       </div>

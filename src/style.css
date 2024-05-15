@@ -1,6 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
+  background: linear-gradient(to bottom, #e087ff, #89eaff, #f5dd89);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +15,21 @@ header {
   width: 100%;
 }
 
+.container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.container-input > input {
+  width: 40%;
+}
+
+input[type="checkbox"] {
+  accent-color: #e087ff;
+}
+
 main {
   width: 60%;
   margin: 80px auto 0;
@@ -25,10 +41,11 @@ ul {
 }
 
 .todo-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  align-items: center;
   padding: 1em;
-  background-color: #eee;
+  background-color: #f9eba4a8;
   list-style: none;
   word-break: break-all;
 }
@@ -42,5 +59,5 @@ span {
 }
 
 .taskDelete:hover {
-  color: red;
+  color: rgb(178, 2, 2);
 }
