@@ -39,6 +39,7 @@ window.onload = function() {
       task1.textContent.localeCompare(task2.textContent)
     );
     taskList.innerHTML = "";
-    tasks.forEach(task => taskList.appendChild(task));
+    tasks.forEach((task) => taskList.appendChild(task));
+    taskInput.value = "";
   }
 };
