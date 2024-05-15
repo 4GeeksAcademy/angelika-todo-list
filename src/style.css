@@ -1,1 +1,46 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  width: 60%;
+  margin: 80px auto 0;
+}
+
+ul {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #eee;
+  list-style: none;
+  word-break: break-all;
+}
+
+span {
+  margin: 0 8px;
+}
+
+.taskDelete {
+  cursor: pointer;
+}
+
+.taskDelete:hover {
+  color: red;
+}
